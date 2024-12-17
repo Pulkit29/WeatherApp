@@ -9,3 +9,11 @@ Setup Instuctions -
 4) Minimum iOS deployment target is 16.0
 5) Run the project on device or simulator
 
+   Previews -
+
+   
+
+
+
+https://github.com/user-attachments/assets/14beb011-9246-48e3-ba1f-55a349924943
+
