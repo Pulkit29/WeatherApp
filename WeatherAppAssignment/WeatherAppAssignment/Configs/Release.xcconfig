@@ -1,0 +1,11 @@
+//
+//  Rlease.xcconfig
+//  WeatherAppAssignment
+//
+//  Created by Pulkit Arora on 15/12/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+weather_api_key = 52cf621176384333934115825241512
