@@ -11,7 +11,7 @@ protocol EnvironmentProtocol {
     static var apiKey: String { get }
 }
 
-struct Environment: EnvironmentProtocol {
+struct AppEnvironment: EnvironmentProtocol {
     static var apiKey: String {
         let apiKey = Bundle.main.object(forInfoDictionaryKey: "Weather_Api") as? String
         return apiKey ?? ""

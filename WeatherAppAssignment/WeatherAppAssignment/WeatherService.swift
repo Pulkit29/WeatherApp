@@ -53,7 +53,7 @@ extension WeatherServiceProtocol {
     
     func getRequest() -> APIRequest {
         var request = WeatherAPIRequest()
-        request.queryParams = ["key": Environment.apiKey]
+        request.queryParams = ["key": AppEnvironment.apiKey]
         return request
     }
 }

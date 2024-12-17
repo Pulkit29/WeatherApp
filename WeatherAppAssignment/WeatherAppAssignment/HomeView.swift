@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Environment(\.dismissSearch) private var dismissSearch
+
     @ObservedObject private var viewModel = HomeViewModel.getInstance()
     
     var body: some View {
@@ -38,6 +40,7 @@ struct HomeView: View {
                             .frame(height: geometry.size.height * 0.20)
                             .onTapGesture {
                                 viewModel.saveSelectedCity(viewModel.selectedCity)
+                                dismissSearch()
                                 Task {
                                     await viewModel.setState(.detail)
                                 }

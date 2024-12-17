@@ -108,7 +108,8 @@ final class HomeViewModel: ObservableObject, HomeViewModelProtocol {
             }
         case .failure(let error):
             await MainActor.run {
-                self.state = .error
+                self.response = nil
+                self.state = .noData
                 debugPrint(error)
             }
         }
